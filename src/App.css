@@ -36,3 +36,182 @@
     transform: rotate(360deg);
   }
 }
+
+/* -- Default -- */
+
+/* -- Home.js -- */
+
+/* General container styling */
+#task-manager {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+.title {
+  text-align: center;
+  color: #333;
+}
+
+.subtitle {
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Form styling */
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Dependencies list */
+.dependencies-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dependency-item {
+  background-color: #e7f3ff;
+  padding: 6px 12px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Add task button */
+.add-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+/* Task list section */
+.task-list-section {
+  margin-top: 20px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 10px;
+  background-color: #f4f6f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Delete task button */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.error {
+  color: #ff4c4c;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.required-star {
+  color: red;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.submit-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* page2 */
+
+/* Error Message */
+.error-message {
+  color: #ff4949;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* Task Page */
+#task-page {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-page-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Task List */
+
+.task-item strong {
+  color: #555;
+}
