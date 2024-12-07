@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { json } from 'react-router-dom';
 
 const TaskPage = ({ tasks }) => (
   <div id="task-page" className="task-page">
@@ -81,7 +80,7 @@ const Home = () => {
   const handleSubmit = async () => {
     console.log(tasks);
     try {
-      const response = await fetch('http://localhost:8000/api/tasks', {
+      const response = await fetch(process.env.BACKEND, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(tasks),
@@ -102,10 +101,20 @@ const Home = () => {
     }
   };
 
+  const onBack=()=>{
+    setResultTasks(null);
+    setErrorMessage('');
+  }
   return (
     <div id="task-manager" className="container">
       {resultTasks || errorMessage ? (
         <div>
+        <button
+          className="back-button"
+          onClick={onBack}
+        >
+          Back
+        </button>
           {errorMessage ? <p className="error-message">{errorMessage}</p> : <TaskPage tasks={resultTasks} />}
         </div>
       ) : (

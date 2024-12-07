@@ -215,3 +215,30 @@
 .task-item strong {
   color: #555;
 }
+
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #55c2da; /* Bootstrap blue */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #4681f4; /* Darker blue */
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  background-color: #004085; /* Even darker blue */
+  transform: scale(0.98);
+}
