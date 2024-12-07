@@ -30,7 +30,7 @@ const Home = () => {
   const [error, setError] = useState('');
 
   const [resultTasks, setResultTasks] = useState(null);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [ errorMessage, setErrorMessage] = useState('');
 
 
   const handleAddTask = () => {
