@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import confidential from '../confidential';
 
 
 const TaskPage = ({ tasks }) => (
@@ -83,7 +82,8 @@ const Home = () => {
     console.log(tasks);
     try {
 
-      const response = await fetch(confidential.BACKEND, {
+      const backend=process.env.REACT_APP_BACKEND;
+      const response = await fetch(backend, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(tasks),
