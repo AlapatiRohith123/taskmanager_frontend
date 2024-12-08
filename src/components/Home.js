@@ -83,6 +83,8 @@ const Home = () => {
     try {
 
       const backend=process.env.REACT_APP_BACKEND;
+      console.log(process.env);
+      console.log(backend);
       const response = await fetch(backend, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
